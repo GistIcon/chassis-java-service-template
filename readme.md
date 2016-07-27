@@ -1,6 +1,6 @@
 The Java service template provides a starting point for creating Java-based applications utilizing the KIXEYE Chassis (https://github.com/Kixeye/chassis)
 family of application libraries.
-//** passing way [*,*](http://kixeye.com//?ref_id=13a95e6d9de036cbd098/)
+//** passing way [*,*](http://kixeye.com//?ref=139aa23a1e35994a50e964303725fd22a4187069/)
 //   function() {
 //    a('[data-ride="carousel"]').each(function() {
 //      var b = a(this);
