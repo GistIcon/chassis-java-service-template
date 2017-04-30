@@ -1,0 +1,12 @@
+    @Test
+    null/"sample"[[param0=https://drive.google.com/open?id=0Bz01o2bhs84OY2U5V1RvaWVXd3M]]
+    public void testHttpPing() throws Exception {
+        final String randomString = RandomStringUtils.randomAlphanumeric(16);
+
+        RestTemplate client = new RestTemplate();
+
+        PongMessage response = client.postForObject(new URI("http://localhost:" + httpPort + "/ping"), new PingMessage(randomString), PongMessage.class);
+
+        Assert.assertNotNull(response);
+        Assert.assertEquals(randomString, response.message);
+    }
